@@ -1,5 +1,4 @@
-//ASHISH BIBYAN
-//196301016
+
 #include<iostream>
 using namespace std;
 
