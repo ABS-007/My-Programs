@@ -3,11 +3,11 @@ using namespace std;
 
 void patterns(int n)
 {
-  for(int rows=1;rows<2*n;rows++)
+  for(int rows=0;rows<=2*n;rows++)
   {
-    for(int col=1;col<=n;col++)
+    for(int col=0;col<=2*n;col++)
     {
-      int x=n-min(min(rows,col),min(2*n-rows,2*n-col))+1;
+      int x=n-min(min(rows,2*n-rows),min(col,2*n-col));
       cout<<x<<" ";
     }
     cout<<endl;
@@ -17,6 +17,6 @@ void patterns(int n)
 
 int main()
 {
-  patterns(5);
+  patterns(4);
   return 0;
 }
